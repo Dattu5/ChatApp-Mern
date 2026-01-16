@@ -16,7 +16,7 @@ const messageSchema = new mongoose.Schema({
   sender: String,
   text: String,
   createdAt: { type: Date, default: Date.now },
-});
+}, { collection: "text" });
 const Message = mongoose.model("Messages", messageSchema);
 
 // Track online users
