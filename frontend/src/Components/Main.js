@@ -24,7 +24,7 @@ const [snackType, setSnackType] = useState("info");
   if (!username) return;
 
   if (!socketRef.current) {
-    socketRef.current = io("http://localhost:5000");
+    socketRef.current = io("https://chatapp-mern-kibb.onrender.com");
   }
 
   const socket = socketRef.current;
