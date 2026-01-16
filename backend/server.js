@@ -4,7 +4,7 @@ const { Server } = require("socket.io");
 const mongoose = require("mongoose");
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://dattatreyagokhale_db_user:MAkO0xrpeCxp3FP2@cluster0.ixnbsd0.mongodb.net/datta?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect('mongodb+srv://dattatreyagokhale_db_user:MAkO0xrpeCxp3FP2@cluster0.ixnbsd0.mongodb.net/chatDB?retryWrites=true&w=majority&appName=Cluster0')
   .then(() => console.log("MongoDB connected"))
   .catch(err => console.log("MongoDB connection error:", err));
 
