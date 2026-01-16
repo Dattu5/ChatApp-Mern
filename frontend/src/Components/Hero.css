@@ -1,0 +1,96 @@
+/* Full screen hero */
+.hero-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #00051a, #001c39);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation bar */
+.hero-nav {
+  padding: 15px 30px;
+  background: rgba(0,0,0,0.2);
+}
+
+/* Hero content center */
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Big heading */
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+/* Description text */
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+/* Input */
+.hero-content input {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: none;
+  margin-bottom: 20px;
+  width: 250px;
+  outline: none;
+}
+
+/* Button */
+.hero-content button {
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  border: none;
+  background: #1976d2;
+  color: black;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.hero-content button:hover {
+  background: #09539e;
+}
+/* Mobile responsiveness (phones) */
+@media (max-width: 450px) {
+
+  .hero-nav {
+    padding: 8px 12px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+    margin-bottom: 18px;
+    max-width: 95%;
+  }
+
+  .hero-content input {
+    width: 200px;
+    font-size: 0.9rem;
+    padding: 9px 12px;
+  }
+
+  .hero-content button {
+    padding: 10px 26px;
+    font-size: 0.95rem;
+  }
+}

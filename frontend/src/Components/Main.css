@@ -1,0 +1,267 @@
+ /* Full screen */
+html, body {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(180deg, #000000, #051013, #0b1012);
+  font-family: Arial, sans-serif;
+}
+
+/* Main chat container */
+.chat {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.chat-header {
+  background: #111;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 25px;
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/* Messages area */
+.chat-messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  flex-direction: column;
+}
+
+/* Message bubble */
+.message {
+  background: #171717;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  max-width: auto;
+}
+
+/* Message header */
+.message-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Sender */
+.sender {
+  color: rgb(112, 111, 111);
+  font-size: smaller;
+  font-weight: 600;
+}
+
+/* Message text */
+.text {
+  margin-left: 40px;
+  display: block;
+}
+
+/* Input footer */
+.chat-input {
+  display: flex;
+  padding: 10px;
+  background: #111;
+  border-top: 1px solid #333;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  background: #222;
+  color: white;
+}
+
+.chat-input button {
+  margin-left: 10px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 10%;
+  background: #1976d2;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background: #004283;
+}
+
+/* Chat online text */
+.chat-online {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* space between dot and text */
+  font-weight: 500;
+  color: #878787;
+  font-size: 15px;
+}
+
+.chat-online .online-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #0ed714; /* green */
+  border-radius: 50%;
+}
+
+/* ===== New styles for Popover & online users ===== */
+
+/* Popover container */
+.popover-content {
+  padding: 10px;
+  min-width: 180px;
+  background-color: #111;
+  border-radius: 5px;
+  color: white;
+}
+
+/* Each user in popover */
+.user-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.user-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Green dot for each user */
+.user-item .online-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #0ed714;
+}
+
+/* User name */
+.user-name {
+  font-weight: 500;
+}
+
+/* Avatar size in popover */
+.user-item .MuiAvatar-root {
+  width: 30px !important;
+  height: 30px !important;
+  font-size: 14px;
+}
+.clear-btn {
+  background: #c90000;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+.clear-btn:hover {
+  background: #ff0000;
+}
+
+ .message-right{
+  background-color: #000237;
+ }
+ .time {
+  display: block;
+  font-size: 11px;
+  color: gray;
+  margin-left: 1300px; /* same as text */
+}
+
+
+/* ================= Mobile (<= 450px) ================= */
+@media (max-width: 450px) {
+ .time {
+  display: block;
+  font-size: 11px;
+  color: gray;
+  margin-left: 195px; /* same as text */
+}
+  /* Header / Navbar */
+  .chat-header {
+    padding: 10px;
+    font-size: 18px;
+    margin: 4px;
+  }
+
+  .chat-online {
+    font-size: 13px;
+  }
+
+  .clear-btn {
+    padding: 6px 8px;
+    font-size: 11px;
+    margin-left: 10px;
+  }
+
+  /* Messages area */
+  .chat-messages {
+    padding: 10px;
+  }
+
+  /* Message bubble */
+  .message {
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+
+  /* Sender name */
+  .sender {
+    font-size: 11px;
+  }
+
+  /* Message text */
+  .text {
+    margin-left: 36px;
+    font-size: 14px;
+  }
+
+  /* Input footer */
+  .chat-input {
+    padding: 8px;
+  }
+
+  .chat-input input {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .chat-input button {
+    padding: 0 14px;
+    font-size: 13px;
+  }
+
+  /* Popover users */
+  .popover-content {
+    min-width: 150px;
+    padding: 8px;
+  }
+
+  .user-name {
+    font-size: 13px;
+  }
+
+  .user-item .MuiAvatar-root {
+    width: 26px !important;
+    height: 26px !important;
+    font-size: 12px;
+  }
+    
+}
+ 
